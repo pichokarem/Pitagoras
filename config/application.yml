@@ -1,0 +1,22 @@
+# Add application configuration variables here, as shown below.
+#
+# PUSHER_APP_ID: "2954"
+# PUSHER_KEY: 7381a978f7dd7f9a1117
+# PUSHER_SECRET: abdc3b896a0ffb85d373
+# STRIPE_API_KEY: EdAvEPVEC3LuaTg5Q3z6WbDVqZlcBQ8Z
+# STRIPE_PUBLIC_KEY: pk_BRgD57O8fHja9HxduJUszhef6jCyS
+
+
+GMAIL_USERNAME_PICHO: pichokaremruby@gmail.com
+GMAIL_USERNAME_KAREM: pkpitagoras@gmail.com
+GMAIL_USERNAME_MARIO: mariopitagoras@gmail.com
+GMAIL_PASSWORD: 1234ruby
+MAILCHIMP_API_KEY: 7742a08cb188596d4e134a2f034687f1-us8
+MAILCHIMP_LIST_ID: 1ed55b8566
+MAILCHIMP_LIST_ID_MATEMATICA: 87e30c0747
+MAILCHIMP_LIST_ID_CASTELLANO: d10465935c
+MAILCHIMP_LIST_ID_QUIMICA: 802bef856d
+DOMAIN_NAME: pitagorasapp.herokuapp.com
+OWNER_EMAIL:   pichokaremruby@gmail.com
+MANDRILLL_USERNAME: pichokaremruby@gmail.com
+MADRILL_API_KEY: o_fwcbAKNLwrVT5_Z3zo_Q

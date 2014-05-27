@@ -1,0 +1,14 @@
+<% content_for :title do %>Lista de Correo<%end%>
+<header>
+      <%= render 'layouts/navigation_alumno' %>
+</header>
+<h1 align = "center">Lista de Correo</h1>
+<section>
+	<div class = "form-centered" style="margin-left: 25%">
+		<%= simple_form_for @suscriptor do |f| %>
+		<%= f.input :email, label: "Email" %>
+		<%= f.input :cedula, label: "Cedula" %>
+		<%= f.button :submit, "Registrarse", :class => "Enviar", :action => "create" %>
+		<% end %>
+	</div>	
+</section>

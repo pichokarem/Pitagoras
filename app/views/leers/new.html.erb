@@ -1,0 +1,13 @@
+<%content_for :tittle do%>Notas<%end%>
+<header>
+      <%= render 'layouts/navigation' %>
+</header>
+<h3>Notas</h3>
+<section>
+	<div class = "form-centered" style="margin-left: 25%">
+		<%= simple_form_for @leer do |f| %>
+		<%= f.input :x %>
+		<%= f.button :submit, "Ver notas", :class => "Enviar", :action => "create" %>
+		<% end %>
+	</div>
+</section>

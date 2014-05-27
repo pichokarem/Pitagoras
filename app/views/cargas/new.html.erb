@@ -1,0 +1,11 @@
+<%content_for :tittle do%>Notas<%end%>
+<header>
+      <%= render 'layouts/navigation' %>
+</header>
+<h3>Subir Notas</h3>
+<div class="form">
+	<%= simple_form_for @carga do |form| %>
+		<%= form.file_field("path")%>
+		<%= form.button :button, "Cargar", :class => "enviar", :accion => "create"%>
+	<%end%>
+</div>

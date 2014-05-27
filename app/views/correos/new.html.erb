@@ -1,0 +1,14 @@
+<% content_for :title do %>Mail<%end%>
+<header>
+      <%= render 'layouts/navigation' %>
+</header>
+<h1 align = "center">E-mail</h1>
+<section>
+	<div class = "form-centered" style="margin-left: 25%">
+		<%= simple_form_for @correo do |f| %>
+		<%= f.input :asunto, label: "Asunto" %>
+		<%= f.input :mensaje, as: :text, label: "Mensaje" %>
+		<%= f.button :submit, "Enviar", :class => "Enviar", :action => "create" %>
+		<% end %>
+	</div>
+</section>

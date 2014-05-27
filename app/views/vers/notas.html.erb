@@ -1,0 +1,27 @@
+<%content_for :tittle do%>Notas<%end%>
+<header>
+      <%= render 'layouts/navigation_alumno' %>
+</header>
+<h3>Notas</h3>
+<div class = "form-centered" style="margin-left: 35%">
+<table>
+		<% i = 0 %>
+		<% arreglo = Array.new(7) %>
+		<tr>
+			<td>Materia</td>
+			<td>Examen 1</td>
+			<td>Examen 2</td>
+			<td>Examen 3</td>
+		<% for row in 0..@size %>
+			<tr>
+				<% arreglo = @lista[i] %>
+					<td><%= arreglo[6] %></td>
+					<td><%= arreglo[3] %></td>
+					<td><%= arreglo[4] %></td>
+					<td><%= arreglo[5] %></td>
+			</tr>
+		<% i = i + 1 %>
+		<%end%>
+		</tr>
+</table>
+</div>

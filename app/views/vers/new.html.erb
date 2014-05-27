@@ -1,0 +1,14 @@
+<%content_for :tittle do%>Notas<%end%>
+<header>
+      <%= render 'layouts/navigation_alumno' %>
+</header>
+<h3>Notas</h3>
+<section>
+	<div class = "form-centered" style="margin-left: 25%">
+		<%= simple_form_for @ver do |f| %>
+		<%= f.input :cedula %>
+		<%= f.button :submit, "Ver notas", :class => "Enviar", :action => "create" %>
+		<% end %>
+	</div>
+</section>
+

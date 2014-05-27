@@ -1,0 +1,10 @@
+<h1 align = "center">Pitagoras</h1>
+<section>
+	<div class = "form-centered" style="margin-left: 25%">
+		<%= simple_form_for @login do |f| %>
+		<%= f.input :username, label: "Username" %>
+		<%= f.input :password, hint: false%>
+		<%= f.button :submit, "Sign In", :class => "Enviar", :action => "create" %>
+		<% end %>
+	</div>
+</section>

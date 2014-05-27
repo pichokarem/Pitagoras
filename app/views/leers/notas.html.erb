@@ -1,0 +1,21 @@
+<%content_for :tittle do%>Notas<%end%>
+<header>
+      <%= render 'layouts/navigation' %>
+</header>
+<h3>Notas de <%=session[:persona].materia %></h3>
+<div class = "form-centered" style="margin-left: 25%">
+<table>
+		<% i = 0 %>
+		<% for row in 1..@num_rows %>
+			<tr>
+				<td><%= @lista[i][0] %></td>
+				<td><%= @lista[i][1] %></td>
+				<td><%= @lista[i][2] %></td>
+				<td><%= @lista[i][3] %></td>
+				<td><%= @lista[i][4] %></td>
+				<td><%= @lista[i][5] %></td>
+			</tr>
+		<% i = i + 1 %>
+		<%end%>
+</table>
+</div>
