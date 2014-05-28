@@ -10,7 +10,7 @@ class CargasController < ApplicationController
 		@carga = Carga.new(secure_params)
 
 		if @carga.valid?
-			Rails.logger.info("aki esta la mateira!!! #{params[:path]}")
+			#Rails.logger.info("aki esta la mateira!!! #{params[:path]}")
 			@carga.load_file(session[:persona].materia,params[:path])
 			flash[:notice] = "buenas tardes profesor #{session[:persona].materia}"
 			flash[:notice] = "Archivo de #{session[:persona].materia} subido :)"

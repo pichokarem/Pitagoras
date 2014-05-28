@@ -17,10 +17,11 @@ class LoginsController < ApplicationController
 				flash[:notice] = "buenas tardes alumno #{session[:persona].username}"
 				render 'paginas/gestion_alumno'
 			else
-				flash[:alert] = "Username o Password incorrectos"
+				flash.now[:notice] = "Username o Password incorrectos"
 				render :new
 			end
 		else
+			flash.now[:notice] = "Username o Password incorrectos"
 			render :new
 		end
 	end

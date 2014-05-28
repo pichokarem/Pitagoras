@@ -15,12 +15,20 @@ class LeersController < ApplicationController
 			redirect_to action: 'new'
 		end
 	end
+
+		def notas
+
+			resp = Leer.leer_archivo(session[:persona].materia)
+			@lista = resp[0]
+			@num_rows = resp[1]
+			render 'notas'
+		
+	end
+	
 	private 
 	def secure_params
 		params.require(:leer).permit(:x)
 	end
 
-	def notas
-		return @lista = @leer.leer_archivo
-	end
+	
 end

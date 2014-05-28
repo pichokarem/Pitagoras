@@ -9,20 +9,17 @@ class Carga < ActiveRecord::Base
 
     def load_file(materia,ruta)
         
-        Rails.logger.info("holaaaaaaaaa ruta #{ruta}")
-        Rails.logger.info("Akiiiiiiiiiiiiiiiiiiiiiii #{ruta.original_filename}")
-        Rails.logger.info("cual materia es  #{materia}")
         Spreadsheet.client_encoding = 'UTF-8'
         if (materia == "Matematica")
-            book = Spreadsheet.open "/home/picho/Escritorio/prueba.xls"
+            book = Spreadsheet.open "/home/picho/Escritorio/calculo.xls"
             materia = "Matematica"
         
         elsif(materia == "Castellano")
-            book = Spreadsheet.open "/home/picho/Escritorio/prueba.xls"
+            book = Spreadsheet.open "/home/picho/Escritorio/castellano.xls"
             materia = "Castellano"
         
         elsif(materia == "Quimica")
-            book = Spreadsheet.open "/home/picho/Escritorio/prueba.xls"
+            book = Spreadsheet.open "/home/picho/Escritorio/quimica.xls"
             materia = "Quimica"
         end
         #book = Spreadsheet.open "/Users/karemsegura/Desktop/prueba.xls"

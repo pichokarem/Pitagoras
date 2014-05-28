@@ -6,6 +6,7 @@ class CorreosController < ApplicationController
 		@correo = Correo.new(secure_params)
 		if @correo.valid?
 			lista = @correo.correo_lista(session[:persona].materia)			
+			Rails.logger.info("tamano de la lista #{lista.size-1}")
 			for i in 0..lista.size-1
 				UsuarioCorreo.contacto_email(@correo,lista[i],session[:persona].materia).deliver
 			end
